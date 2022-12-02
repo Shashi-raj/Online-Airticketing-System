@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+      body {
+        background-image: url("images/new_img2.jpg");
+        filter: blur(px);
+        -webkit-filter: blur(px);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .row {
+        transition: translate(-50%, -50%);
+        z-index: 2;
+      }
+
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+      }
+
+      html {
+        font-family: "Lucida Sans", sans-serif;
+      }
+
+      .header {
+        background-color: #001E6C;
+        color: #ffffff;
+        padding: 15px;
+      }
+
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu a {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #035397;
+        color: #ffffff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      .menu a:hover {
+        background-color: #035397;
+      }
+
+      .aside {
+        background-color: #035397;
+        padding: 15px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+      .grid-container {
+        display: grid;
+        grid-auto-columns: auto;
+        background-color: #035397;
+        padding: 10px;
+        margin-left:20px;
+        margin-right:20px;
+      }
+      .grid-item {
+        background-color: #6d6b69;
+        border: 1px solid #035397;
+        padding: 20px;
+        color: #E9D5DA;
+        font-size: 15px;
+        text-align: left;
+      }
+      .footer {
+        background-color: #b64605;
+        color: #ffffff;
+        text-align: center;
+        font-size: 12px;
+        padding: 10px;
+        margin: 10px;
+      }
+      .heading_2{
+          margin-left: 20px;
+          color:#e1e0f0;
+      }
+      .vertical-menu a {
+        background-color: #035397;
+        color: rgb(245, 238, 238);
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+      }
+
+      .vertical-menu a:hover {
+       background-color: #ccc;
+      }
+
+      /* For desktop: */
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+          text-align: center;
+          color:#242121;
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1><img src="images/travel.png" width=40px" style="margin-left:30px; margin-right:10px;">Airline</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-3 menu">s
+        <div class="vertical-menu">
+            <a href="index.html">Home</a> 
+            <a href="login_page.php">Book-Tickets</a>
+            <a href="pnrall.php">Check-PNR</a>
+            <a href="contact.php">Contact</a>
+            <a href="login_page.php">Login</a>
+            <a href="new_user.php">SignUp</a>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <h1>About Airline</h1>
+        <p>An airline is a company that provides air transport services for traveling passengers and freight.
+             Airlines utilize aircraft to supply these services, and may form partnerships or alliances with other airlines for codeshare agreements.
+             Generally, airline companies are recognized with an air operating certificate or license issued by a governmental aviation body.
+        </p>
+      </div>
+
+      <div class="col-3 right">
+        <div class="aside">
+            <h2>AVAILABLE OFFER:</h2>
+          <h3>NOCF:Get 100% instant discount on convenience fee.</h3>
+          <h3>BOOKEARLY: Avail Flat 10% discount Up to 700.</h3>
+          <h3>INTPOINTS:Get 100% Paytm First Points up to 30,000 points.</h3>
+          <h3>FLIGHTREWARD:Get 3X cashback points up to 20,000 points</h3>
+          <h3>FLYPERKS:Get vouchers from Myntra, Cult.Fit, Tata 1MG, OYO Wizard and Wakefit worth Rs. 5000</h3>
+        </div>
+      </div>
+      <h2 class="heading_2">Frequently Asked Question</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <a><img src="images/question-mark.png" width=40px" style="margin-right:5px;">How to book tickets?</a><br>
+          <p>In order to book flight ticket login to Airline, enter departure and arrival destination, travel dates, number of passengers and travel class to get a list of all available flights that you can compare and choose from.</p>
+        </div>
+        <div class="grid-item">
+          <a><img src="images/question-mark.png" width=40px" style="margin-right:5px;">How do I check available seat?</a><br>
+          <p>When you have performed a flight search on Airline you get a list of all available flights for your desired dates. After checking out prices and entering your personal information you can check flight seat availability by seeing seat map of the plane that you will be getting on for your travel and choose your seat accordingly.</p>
+        </div>
+        <div class="grid-item">
+          <a><img src="images/question-mark.png" width=40px" style="margin-right:5px;">How do I get low fare Ticket?</a><br>
+          <p>The best way to get a low fare air ticket is to filter your search on the basis of price which will then refresh the page and display a list of flights with the cheapest one on top and most expensive one on bottom. One can even select the price range to get flights only within that particular price range.</p>
+        </div>
+        <div class="grid-item">
+          <a><img src="images/question-mark.png" width=40px" style="margin-right:5px;">How do I book air ticket?</a><br>    
+          <p>It is very simple to book air tickets on Airline. Simply enter your arrival and departure destination, number of passengers, travel class and departure date to get a list of all the available flights and click on book now to reserve your preferred flight.</p>
+        </div>
+        <div class="grid-item">
+          <a><img src="images/question-mark.png" width=40px" style="margin-right:5px;">What does air reservation means?</a><br>
+          <p>Air ticket reservation means booking an airline ticket after checking out its price, baggage policy, cancellation and refund policy as well as seat map.</p>
+        </div>
+        <div class="grid-item">
+          <a><img src="images/question-mark.png" width=40px" style="margin-right:5px;">Is it worthit booking online?</a><br>
+          <p>It certainly is worth booking flights online as you get to compare prices of different flights on a single page and compare other features as well.</p>
+        </div>
+           
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Resize the browser window to see how the content respond to the
+        resizing.
+      </p>
+    </div>
+  </body>
+</html>

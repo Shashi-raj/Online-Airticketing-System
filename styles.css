@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+body {
+  background-image: url("images/new_img2.jpg");
+  filter: blur(px);
+  -webkit-filter: blur(px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.row {
+  transition: translate(-50%, -50%);
+  z-index: 2;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #001E6C;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu a {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #035397;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menu a:hover {
+  background-color: #035397;
+}
+
+.aside {
+  background-color: #035397;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.row-2{
+  background-color:#035397 ;
+  padding-top: 10px;
+  margin: 10px;
+}
+.row-2 h2{
+  margin-left:3%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  background-color: #291609;
+  border: 1px solid #035397;
+  padding: 20px;
+  color: #E9D5DA;
+  font-size: 15px;
+  text-align: left;
+}
+.footer {
+  background-color: #291609;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px;
+  margin: 10px;
+}
+.heading_2{
+    margin-left: 20px;
+    color:#e2e1f7;
+}
+.vertical-menu a {
+  background-color: #035397;
+  color: rgb(245, 238, 238);
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+ background-color: #ccc;
+}
+
+/* For desktop: */
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+    text-align: center;
+    color:#171515;
+  width: 50%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+.bottom-container{
+    padding-top:5px ;
+    background-color: #291609;
+    text-decoration:none ;
+    text-align: center;
+    color: #eadcdc;
+    margin-top: 10px;
+    height:15%;
+}
+.copyright{
+    color: #edf2f2;
+    padding: 20px 0;
+    font-size: small;
+}
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+.column1 .content {
+  position: relative;
+  display: table;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: #035397; /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 12px;
+  margin-top:0px;
+}
+
+
+/* Clearfix (clear floats) */
