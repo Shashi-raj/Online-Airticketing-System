@@ -1,6 +1,8 @@
 # Online-Airticketing-System
 Online air ticketing refers to the process of booking airline tickets through the internet, typically via travel websites, airline websites, or online travel agencies (OTAs). This system enables customers to search for, compare, and purchase flight tickets from the convenience of their computers, smartphones, or tablets, without needing to visit a physical ticket counter or call an agent.
+
 A web based application
+
 Steps to deeploy this project
 1.dowload the files 
 2.Add all the files in a folder
